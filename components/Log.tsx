@@ -24,7 +24,7 @@ const Log = () => {
         <Card.Section>
           <Center>
             {/*eslint-disable-next-line jsx-a11y/alt-text*/}
-
+<Images/>
           </Center>
         </Card.Section>
         <br></br>
