@@ -6,9 +6,9 @@ const Images = () => {
       style={{
         paddingTop: 30
       }}
-      src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/LOGO.jpg"
-      height={200}
-      width={240}
+      src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/LOGO.png"
+      height={100}
+      width={140}
 
     />
   )
