@@ -24,7 +24,7 @@ const Log = () => {
         <Card.Section>
           <Center>
             {/*eslint-disable-next-line jsx-a11y/alt-text*/}
-<Images/>
+            <Images />
           </Center>
         </Card.Section>
         <br></br>
@@ -37,7 +37,7 @@ const Log = () => {
           }}
           mt="sm"
           label="Usuario"
-          /*placeholder="RPE"*/
+          placeholder="No. Empleado"
           icon={<BiUser></BiUser>}
 
         />
@@ -47,7 +47,7 @@ const Log = () => {
             paddingRight: 20,
             width: 300
           }}
-          /** placeholder="Contraseña"*/
+          placeholder="Contraseña"
           label="Contraseña"
           icon={<BiLock></BiLock>}
         />
