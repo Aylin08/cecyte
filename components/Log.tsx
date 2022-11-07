@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
 import { Container, Card, Text, Center, TextInput, PasswordInput, Group, Button } from '@mantine/core'
 import Link from 'next/link'
 import { BiUser, BiLock } from 'react-icons/bi'
 import { CgLogIn } from 'react-icons/cg'
 import Images from './Image';
-
-import { useRouter } from 'next/router'
 const Log = () => {
 
   return (
@@ -53,7 +50,7 @@ const Log = () => {
         />
         <Group position="center" mt="md" mb="xs">
           <br></br>
-          <Button leftIcon={<CgLogIn />} sx={(theme) => ({ backgroundColor: '#3F6D3F', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} type="submit" >
+          <Button leftIcon={<CgLogIn />} sx={(theme) => ({ backgroundColor: '#571719', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} type="submit" >
             <Link href="/inicio">Iniciar Sesión</Link>
           </Button>
         </Group>
