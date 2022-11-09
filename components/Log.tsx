@@ -50,7 +50,7 @@ const Log = () => {
         />
         <Group position="center" mt="md" mb="xs">
           <br></br>
-          <Button leftIcon={<CgLogIn />} sx={(theme) => ({ backgroundColor: '#571719', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} type="submit" >
+          <Button leftIcon={<CgLogIn />} sx={(theme) => ({ backgroundColor: '#571719', '&:hover': { backgroundColor: theme.fn.darken('#743C3E', 0.05), }, })} type="submit" >
             <Link href="/inicio">Iniciar Sesión</Link>
           </Button>
         </Group>
