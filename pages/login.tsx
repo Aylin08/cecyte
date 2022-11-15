@@ -5,10 +5,16 @@ import { BackgroundImage, Box, Center } from '@mantine/core'
 
 const Login = () => {
     return (
+        <Layout tituloPestaña='Iniciar sesión'>
 
+            <Box
+                sx={(theme) => ({
+                    fontSize: theme.fontSizes.md,
+                    '@media (max-width: 755px)': {
+                        fontSize: theme.fontSizes.sm,
+                    },
+                })}>
 
-        <Box xs={{ maxWidth: 700 }} mx="auto">
-            <Layout tituloPestaña='Iniciar sesión'>
                 <BackgroundImage
                     src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/fondoc.jpg"
                     radius="sm"
@@ -18,8 +24,13 @@ const Login = () => {
                     </Center>
 
                 </BackgroundImage>
-            </Layout>
-        </Box>
+            </Box>
+
+        </Layout>
+
+
+
+
 
 
 
