@@ -3,34 +3,33 @@ import Link from 'next/link'
 import { BiUser, BiLock } from 'react-icons/bi'
 import { CgLogIn } from 'react-icons/cg'
 import Images from './Image';
+import Footers from './Footer'
 const Log = () => {
 
   return (
-    <Container size={350}  >
-
-      <Center>
-        <Images />
-      </Center>
-
+    <Container size={350} px={0}   >
 
       <Flex
-        mih={50}
+        mih={'40%'}
         bg="rgba(0, 0, 0, .3)"
         gap="xl"
         justify="center"
         align="center"
         direction="column"
 
+
+
       >
 
-
-
-        <Text weight={700} align="center" style={{ fontFamily: 'Greycliff CF, sans-serif' }}>  Iniciar Sesión</Text>
+        <Center>
+          <Images />
+        </Center>
+        <Text weight={700} align="center" style={{ fontFamily: 'Greycliff CF, sans-serif', color: 'white' }}>  Bienvenido (a)</Text>
         <TextInput
           style={{
-            paddingLeft: 30,
-            paddingRight: 20,
-            width: 300
+            paddingLeft: '10%',
+            paddingRight: '10%',
+            width: '90%'
           }}
           mt="sm"
           label="Usuario"
@@ -40,9 +39,9 @@ const Log = () => {
         />
         <PasswordInput
           style={{
-            paddingLeft: 30,
-            paddingRight: 20,
-            width: 300
+            paddingLeft: '10%',
+            paddingRight: '10%',
+            width: '90%'
           }}
           placeholder="Contraseña"
           label="Contraseña"
@@ -55,11 +54,8 @@ const Log = () => {
           </Button>
         </Group>
         <br></br>
-
-
-
-
       </Flex>
+
     </Container>
 
   )
