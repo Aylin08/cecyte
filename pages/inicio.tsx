@@ -1,14 +1,14 @@
+
 import React from 'react';
-import AppShel from '../components/appshel';
 import Layout from '../components/Layout';
+import MenuOP from '../components/menu';
+
 
 const Inicio = () => {
 
   return (
     <Layout tituloPestaña='Inicio'>
-      <AppShel tituloPagina='Bienvenido'>
-
-      </AppShel>
+      <MenuOP />
     </Layout>
   )
 }

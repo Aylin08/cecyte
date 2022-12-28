@@ -1,5 +1,4 @@
 import { BackgroundImage, Container, ScrollArea } from '@mantine/core'
-import { sizes } from '@mantine/core/lib/ActionIcon/ActionIcon.styles'
 import React from 'react'
 import Footers from './Footer'
 import Log from './Log'
@@ -9,8 +8,7 @@ const Fondo = () => {
     <BackgroundImage
       src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/fondoc.jpg"
       style={{
-        maxWidth: '100%',
-        height: '100%',
+        position: 'absolute',
 
       }}
     >
@@ -18,12 +16,8 @@ const Fondo = () => {
         <Container>
           <Log></Log>
         </Container>
+        <Footers />
       </ScrollArea>
-
-
-
-
-
     </BackgroundImage>
   )
 }

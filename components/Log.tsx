@@ -1,7 +1,6 @@
 import { Container, Flex, Text, Center, TextInput, PasswordInput, Group, Button } from '@mantine/core'
 import Link from 'next/link'
 import { FaUser } from 'react-icons/fa'
-import { CgLogIn } from 'react-icons/cg'
 import ImagenInicio from './LogoInicio';
 import { IconPassword } from '@tabler/icons';
 import { BiLogInCircle } from 'react-icons/bi';
