@@ -26,7 +26,7 @@ const Log = () => {
         <Center>
           <Images />
         </Center>
-        <Text weight={700} align="center" style={{ fontFamily: 'Greycliff CF, sans-serif', color: 'white' }}>  Bienvenido (a)</Text>
+        <Text weight={700} align="center" fz="lg" style={{ fontFamily: 'Greycliff CF, sans-serif', color: 'white' }}>  Bienvenido (a)</Text>
         <TextInput
           style={{
             paddingLeft: '10%',

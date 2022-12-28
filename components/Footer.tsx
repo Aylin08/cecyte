@@ -1,12 +1,17 @@
 import React from 'react'
-import { Footer, Text, Image } from '@mantine/core';
+import { Footer, Text, ActionIcon, Group } from '@mantine/core';
+import { BiRegistered } from 'react-icons/bi';
 const Footers = () => {
   return (
     <Footer height={40} p="sm" sx={(theme) => ({ backgroundColor: '#571719' })}>
+      <Group spacing="xs">
 
-      <Text color={'white'}>Copy Right</Text>
+        <ActionIcon>
+          <BiRegistered size={'90%'} color={'white'} />
 
-
+        </ActionIcon>
+        <Text color={'white'} fw={700} ta="right" fz="md">Copy Right </Text>
+      </Group>
     </Footer>
   )
 }
