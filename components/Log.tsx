@@ -3,11 +3,17 @@ import Link from 'next/link'
 import { BiUser, BiLock } from 'react-icons/bi'
 import { CgLogIn } from 'react-icons/cg'
 import Images from './Image';
-import Footers from './Footer'
+
 const Log = () => {
 
   return (
-    <Container size={350} px={0}   >
+    <Container size={350} px={0}
+      style={{
+        paddingTop: '10%',
+        paddingBottom: '10%'
+      }}
+
+    >
 
       <Flex
         mih={'40%'}
@@ -15,11 +21,7 @@ const Log = () => {
         gap="xl"
         justify="center"
         align="center"
-        direction="column"
-
-
-
-      >
+        direction="column" >
 
         <Center>
           <Images />
@@ -29,7 +31,8 @@ const Log = () => {
           style={{
             paddingLeft: '10%',
             paddingRight: '10%',
-            width: '90%'
+            width: '90%',
+
           }}
           mt="sm"
           label="Usuario"
@@ -41,7 +44,8 @@ const Log = () => {
           style={{
             paddingLeft: '10%',
             paddingRight: '10%',
-            width: '90%'
+            width: '90%',
+
           }}
           placeholder="Contraseña"
           label="Contraseña"
