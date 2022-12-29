@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "book"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "text"
+    },
+    "Editor": {
+      "type": "string"
+    },
+    "Editorial": {
+      "type": "string"
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "paginas": {
+      "type": "integer"
+    }
+  }
+}
