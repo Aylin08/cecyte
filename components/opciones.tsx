@@ -54,13 +54,13 @@ const Opciones = () => {
                 <Card shadow="sm" p="lg" radius="md" withBorder>
                     <Card.Section>
                         <Image
-                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/cerrar-sesion.png"
-                            height={150}
+                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/cerrar.png"
+                            height={160}
                             width={"100%"}
 
                         />
                     </Card.Section>
-                    <Button variant="filled" color="#571719" fullWidth mt="md" radius="md" style={{backgroundColor:'#571719'}}>
+                    <Button variant="filled" color="#571719" fullWidth mt="md" radius="md" style={{ backgroundColor: '#571719' }}>
 
                         <Link href="/">Salir</Link>
                     </Button>
