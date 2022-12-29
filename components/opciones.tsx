@@ -54,7 +54,7 @@ const Opciones = () => {
                 <Card shadow="sm" p="lg" radius="md" withBorder>
                     <Card.Section>
                         <Image
-                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/cerra.png"
+                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/cerrar-sesion.png"
                             height={150}
                             width={"100%"}
 
