@@ -60,7 +60,7 @@ const Opciones = () => {
 
                         />
                     </Card.Section>
-                    <Button variant="subtle" color="blue" fullWidth mt="md" radius="md">
+                    <Button variant="filled" color="#571719" fullWidth mt="md" radius="md" style={{backgroundColor:'#571719'}}>
 
                         <Link href="/">Salir</Link>
                     </Button>
