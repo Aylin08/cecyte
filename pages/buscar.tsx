@@ -1,8 +1,12 @@
 import React from 'react'
+import BusquedaP from '../components/busquedaP'
+import Layout from '../components/Layout'
 
 const Buscar = () => {
     return (
-        <div>Buscar</div>
+        <Layout tituloPestaña='Búsqueda'>
+      <BusquedaP/>
+    </Layout>
     )
 }
 

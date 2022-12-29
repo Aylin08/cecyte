@@ -1,8 +1,7 @@
 import React from 'react'
-import { Card, Image, Flex, Button, Group, Container, ActionIcon, Center } from '@mantine/core';
+import { Card, Image, Flex, Button, Container } from '@mantine/core';
 import Link from 'next/link';
-import { BiBook, BiLogOutCircle, BiSearch } from 'react-icons/bi';
-import { FaSearch } from 'react-icons/fa';
+
 const Opciones = () => {
     return (
         <Container

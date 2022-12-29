@@ -1,7 +1,6 @@
-import { BackgroundImage, Center, ScrollArea, Text } from '@mantine/core'
+import { BackgroundImage, ScrollArea, Text } from '@mantine/core'
 import React from 'react'
 import Footers from './Footer'
-import Images from './Image'
 import Opciones from './opciones'
 
 const MenuOP
