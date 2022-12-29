@@ -25,14 +25,13 @@ const Opciones = () => {
                 <Card shadow="sm" p="lg" radius="md" withBorder>
                     <Card.Section>
                         <Image
-                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/lupa.png"
+                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/libro.png"
                             height={150}
                             width={"100%"}
 
                         />
                     </Card.Section>
-                    <Button variant="light" color='dark' fullWidth mt="md" radius="md">
-
+                    <Button variant="filled" color="#571719" fullWidth mt="md" radius="md" style={{ backgroundColor: '#571719' }}>
                         <Link href="/buscar">Buscar</Link>
                     </Button>
                 </Card>
@@ -46,7 +45,7 @@ const Opciones = () => {
 
                         />
                     </Card.Section>
-                    <Button variant="light" color="blue" fullWidth mt="md" radius="md">
+                    <Button variant="filled" color="#571719" fullWidth mt="md" radius="md" style={{ backgroundColor: '#571719' }}>
 
                         <Link href="/capturar">Opciones</Link>
                     </Button>
