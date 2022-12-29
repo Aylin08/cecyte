@@ -18,7 +18,6 @@ const MenuOP
             >
                 <ScrollArea style={{ height: '100%' }} type="never">
                     <Text weight={700} align="center" fz="lg" style={{ fontFamily: 'Greycliff CF, sans-serif', color: 'white', paddingTop: '4%' }}>  Hola amigo(a)</Text>
-                    <Center><Images /> </Center>
                     <Opciones />
                     <Footers />
                 </ScrollArea>

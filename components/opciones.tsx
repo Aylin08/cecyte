@@ -8,7 +8,7 @@ const Opciones = () => {
         <Container
             style={{
                 paddingTop: '10%',
-                paddingBottom: '12%',
+                paddingBottom: '12.5%',
 
             }}
 
@@ -25,7 +25,7 @@ const Opciones = () => {
                 <Card shadow="sm" p="lg" radius="md" withBorder>
                     <Card.Section>
                         <Image
-                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/search.png"
+                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/lupa.png"
                             height={150}
                             width={"100%"}
 
@@ -39,26 +39,28 @@ const Opciones = () => {
 
                 <Card shadow="sm" p="lg" radius="md" withBorder>
                     <Card.Section>
-                        <Center>
-                            <ActionIcon>
-                                <BiBook size={'800%'} color={'#571719'} />
-                            </ActionIcon>
-                        </Center>
+                        <Image
+                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/contrato.png"
+                            height={150}
+                            width={"100%"}
+
+                        />
                     </Card.Section>
                     <Button variant="light" color="blue" fullWidth mt="md" radius="md">
 
-                        <Link href="/capturar"> más opciones</Link>
+                        <Link href="/capturar">Opciones</Link>
                     </Button>
                 </Card>
                 <Card shadow="sm" p="lg" radius="md" withBorder>
                     <Card.Section>
-                        <Center>
-                            <ActionIcon>
-                                <BiLogOutCircle size={'800%'} color={'#571719'} />
-                            </ActionIcon>
-                        </Center>
+                        <Image
+                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/cerra.png"
+                            height={150}
+                            width={"100%"}
+
+                        />
                     </Card.Section>
-                    <Button variant="light" color="blue" fullWidth mt="md" radius="md">
+                    <Button variant="subtle" color="blue" fullWidth mt="md" radius="md">
 
                         <Link href="/">Salir</Link>
                     </Button>
