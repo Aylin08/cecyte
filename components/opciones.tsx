@@ -21,22 +21,9 @@ const Opciones = () => {
                 justify="center"
                 align="center"
                 direction="row"
+
             >
-                <Card shadow="sm" p="lg" radius="md" withBorder>
-                    <Card.Section>
-                        <Image
-                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/libro.png"
-                            height={150}
-                            width={"100%"}
-
-                        />
-                    </Card.Section>
-                    <Button variant="filled" color="#571719" fullWidth mt="md" radius="md" style={{ backgroundColor: '#571719' }}>
-                        <Link href="/buscar">Buscar</Link>
-                    </Button>
-                </Card>
-
-                <Card shadow="sm" p="lg" radius="md" withBorder>
+                <Card shadow="sm" p="lg" radius="lg" withBorder>
                     <Card.Section>
                         <Image
                             src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/contrato.png"
@@ -45,12 +32,28 @@ const Opciones = () => {
 
                         />
                     </Card.Section>
-                    <Button variant="filled" color="#571719" fullWidth mt="md" radius="md" style={{ backgroundColor: '#571719' }}>
+                    <Button variant="outline" color="gray" fullWidth mt="md" radius="md" >
 
                         <Link href="/capturar">Opciones</Link>
                     </Button>
                 </Card>
-                <Card shadow="sm" p="lg" radius="md" withBorder>
+                <Card shadow="sm" p="lg" radius="lg" withBorder>
+                    <Card.Section>
+                        <Image
+                            src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/libro.png"
+                            height={150}
+                            width={"100%"}
+
+                        />
+                    </Card.Section>
+                    <Button variant="outline" color="gray" fullWidth mt="md" radius="md" >
+
+                        <Link href="/buscar">Buscar</Link>
+                    </Button>
+                </Card>
+
+
+                <Card shadow="sm" p="lg" radius="lg" withBorder>
                     <Card.Section>
                         <Image
                             src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/cerrar.png"
@@ -59,8 +62,7 @@ const Opciones = () => {
 
                         />
                     </Card.Section>
-                    <Button variant="filled" color="#571719" fullWidth mt="md" radius="md" style={{ backgroundColor: '#571719' }}>
-
+                    <Button variant="outline" color="gray" fullWidth mt="md" radius="md" >
                         <Link href="/">Salir</Link>
                     </Button>
                 </Card>
