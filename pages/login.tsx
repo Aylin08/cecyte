@@ -11,12 +11,6 @@ const Login = () => {
         </Layout>
 
 
-
-
-
-
-
-
     )
 }
 

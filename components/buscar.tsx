@@ -2,16 +2,27 @@ import React, { useState, useEffect } from 'react';
 import { Table, ActionIcon, ScrollArea, TextInput, Group, Divider } from '@mantine/core';
 import { BiSearch } from 'react-icons/bi'
 import { HiOutlineSearchCircle } from 'react-icons/hi'
+import { z } from 'zod';
+import { useForm, zodResolver } from '@mantine/form';
+
+
 
 const Buscar = () => {
   const [buscar, setBuscar] = useState("");
+  
+  
   return (
     <ScrollArea style={{ height: 250 }} type="always" scrollbarSize={18}>
       <Group style={{
         height: 40,
 
       }}>
-        <TextInput
+
+      
+
+     
+       
+       <TextInput
           style={{
             width: '45%',
             marginTop: 4,
@@ -29,8 +40,12 @@ const Buscar = () => {
           marginBottom: 5,
           width: 40
         }}>
+
+          
           <HiOutlineSearchCircle />
         </ActionIcon>
+
+
       </Group>
       <Divider color={"black"} size={1} />
       <Table horizontalSpacing="xl" verticalSpacing="md" fontSize="xs">
