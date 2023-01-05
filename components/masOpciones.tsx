@@ -5,7 +5,9 @@ import Layout from './Layout'
 const Seleccionar = () => {
     return (
         <Layout tituloPestaña={'Opciones'}>
-            <AppShel tituloPagina={'Bienvenido'}></AppShel>
+            <AppShel tituloPagina={'Opciones'}>
+
+            </AppShel>
         </Layout>
     )
 }

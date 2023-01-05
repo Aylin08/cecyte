@@ -1,8 +1,14 @@
 import React from 'react'
+import AppShel from './appshel'
+import Layout from './Layout'
 
 const Capturar = () => {
     return (
-        <div>Capturar</div>
+        <Layout tituloPestaña={'Capturar'}>
+            <AppShel tituloPagina={'Captura'}>
+                <text>HOLAA</text>
+            </AppShel>
+        </Layout>
     )
 }
 
