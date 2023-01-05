@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link';
-import { AiOutlineHome } from 'react-icons/ai'
-import { FaUsers, FaDesktop } from 'react-icons/fa'
-import { GoSignOut } from 'react-icons/go'
+import { AiOutlineHome, AiOutlineMore } from 'react-icons/ai'
 import { useState } from 'react';
-import { AppShell, Text, useMantineTheme, Navbar, Footer, Stack, Header, MediaQuery, Burger, Image, Button } from '@mantine/core';
+import { AppShell, useMantineTheme, Navbar, Stack, Button, Footer, Header, Text, MediaQuery, Burger } from '@mantine/core';
 
 import Images from './Image';
+import { FaEdit } from 'react-icons/fa';
+import { BiPlus } from 'react-icons/bi';
 
 
 
@@ -30,10 +30,10 @@ const AppShel = ({ children, tituloPagina }) => {
           p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 250 }} sx={(theme) => ({ backgroundColor: '#A4E5A4' })}>
 
           <Stack sx={(theme) => ({ backgroundColor: '#A4E5A4' })}>
-            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<AiOutlineHome></AiOutlineHome>}><Link href='/inicio'>Inicio</Link></Button>
-            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<FaUsers></FaUsers>}><Link href='/Capturar'>Capturar</Link></Button>
-            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<FaDesktop></FaDesktop>}><Link href='/Buscar'>Buscar</Link></Button>
-            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<GoSignOut></GoSignOut>}><Link href='/'>Cerrar Sesion</Link></Button>
+
+            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<BiPlus/>}><Link href='capturar'>Capturar</Link></Button>
+            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<FaEdit />}><Link href='modificar'>Editar</Link></Button>
+
           </Stack>
         </Navbar>
       }

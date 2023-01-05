@@ -33,7 +33,7 @@ const Opciones = () => {
                     </Card.Section>
                     <Button variant="outline" color="gray" fullWidth mt="md" radius="md" >
 
-                        <Link href="/capturar">Opciones</Link>
+                        <Link href="/opcionesMenu">Opciones</Link>
                     </Button>
                 </Card>
                 <Card shadow="sm" p="lg" radius="lg" withBorder>

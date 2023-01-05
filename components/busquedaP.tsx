@@ -1,6 +1,7 @@
-import { BackgroundImage, Card, Container, ScrollArea, Space, Text } from '@mantine/core'
+import { ActionIcon, BackgroundImage, Card, Container, ScrollArea, Space, Text } from '@mantine/core'
 import React from 'react'
-import { BiSearch } from 'react-icons/bi'
+import { BiArrowBack, BiSearch } from 'react-icons/bi'
+import { GoTrashcan } from 'react-icons/go'
 import Buscar from './buscar'
 
 
@@ -24,7 +25,11 @@ const BusquedaP = () => {
                     <Buscar />
 
                 </Container >
+                <ActionIcon radius="xs" size="xs" component="a" href="inicio" >
+                    <BiArrowBack />
+                </ActionIcon>
             </ScrollArea>
+
         </BackgroundImage>
     )
 }
