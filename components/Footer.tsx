@@ -10,7 +10,7 @@ const Footers = () => {
           <BiRegistered size={'90%'} color={'white'} />
 
         </ActionIcon>
-        <Text color={'white'} fw={700} ta="right" fz="md">Copy Right </Text>
+        <Text color={'white'} fw={700} ta="right" fz="md">Copy Right 2023 </Text>
       </Group>
     </Footer>
   )

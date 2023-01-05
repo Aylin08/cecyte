@@ -127,3 +127,20 @@
     filter: invert(1);
   }
 }
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 50px;
+  grid-auto-rows: minmax(100px, auto);
+}

@@ -1,7 +1,14 @@
-import React from 'react'
+import React, {ReactNode} from 'react'
 import Head from 'next/head'
 
-const Layout = ({ children, tituloPestaña }) => {
+
+interface Props {
+    children?: ReactNode,
+    tituloPestaña?:ReactNode
+    // any props that come into the component
+  }
+
+const Layout = ({ children, tituloPestaña }: Props) => {
     return (
         <div>
             <Head>
