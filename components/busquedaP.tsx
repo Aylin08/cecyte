@@ -1,4 +1,4 @@
-import { BackgroundImage, Card, Container, Divider, ScrollArea, Space, Text } from '@mantine/core'
+import { BackgroundImage, Card, Container, ScrollArea, Space, Text } from '@mantine/core'
 import React from 'react'
 import { BiSearch } from 'react-icons/bi'
 import Buscar from './buscar'
@@ -19,10 +19,10 @@ const BusquedaP = () => {
             <ScrollArea style={{ height: '100%' }} type="never">
                 <Text weight={700} align="center" fz="lg" style={{ fontFamily: 'Greycliff CF, sans-serif', color: 'white', paddingTop: '4%' }}> <BiSearch />   Búsqueda de libros </Text>
                 <Container >
-                        <Space h="xl" />
-                      
-                            <Buscar />
-                        
+                    <Space h="xl" />
+
+                    <Buscar />
+
                 </Container >
             </ScrollArea>
         </BackgroundImage>

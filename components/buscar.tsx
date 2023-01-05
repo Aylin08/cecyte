@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Table, ScrollArea, TextInput, Group, Divider, Space } from '@mantine/core';
 import { BiSearch } from 'react-icons/bi'
 import api from '../services/api';
-import { z } from 'zod';
 import { useForm, zodResolver } from '@mantine/form';
 
 
