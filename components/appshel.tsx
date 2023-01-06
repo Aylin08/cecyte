@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {ReactNode} from 'react'
 import Link from 'next/link';
 import { AiOutlineHome, AiOutlineMore } from 'react-icons/ai'
 import { useState } from 'react';
@@ -10,8 +10,15 @@ import { BiArrowBack, BiPlus } from 'react-icons/bi';
 import Footers from './Footer';
 
 
+interface Props {
+  children?: ReactNode,
+  tituloPagina?:ReactNode
+  // any props that come into the component
+}
 
-const AppShel = ({ children, tituloPagina }) => {
+
+
+const AppShel = ({ children, tituloPagina }:Props) => {
   const theme = useMantineTheme();
   const [opened, setOpened] = useState(false);
   return (
