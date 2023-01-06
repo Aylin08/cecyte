@@ -23,9 +23,10 @@ const Capturar = () => {
         <Layout tituloPestaña={'Capturar'}>
             <AppShel tituloPagina={'Captura'}>
   
-    <div className={styles.wrapper}>
+
       
-    
+      <div className={styles.wrapper}>
+
       <TextInput label="Titulo" placeholder="Titulo" 
        {...form.getInputProps('titulo')} />
 
@@ -34,6 +35,7 @@ const Capturar = () => {
 
       <TextInput mt="md" label="Editorial" placeholder="Editorial" 
       {...form.getInputProps('editorial')} />
+   
 
       <TextInput mt="md" label="Editor" placeholder="Editor"
        {...form.getInputProps('editor')} />
@@ -45,9 +47,7 @@ const Capturar = () => {
       {...form.getInputProps('copyright')} />
       
 
-    </div>    
-
-      
+      </div>
     <Group position="center" mt="xl">
         <Button variant="outline" 
         

@@ -131,16 +131,33 @@
 
 
 
+#grid {
+  display: grid;
+  height: 100px;
+  grid-template-rows: 30px 1fr;
+}
 
+#areaA {
+  background-color: lime;
+}
 
-
+#areaB {
+  background-color: yellow;
+  bottom: 100px;
+}
 
 
 
 .wrapper {
   
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  gap: 50px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 43px;
+  grid-row-gap: 25px;
+}
+
+
+.myrow{
+  grid-auto-rows: auto;
 }
