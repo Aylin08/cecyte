@@ -11,6 +11,7 @@ export default class Client {
 
     }
     static async GET(url) {
+        
         return await (await axios.get(this.BASE_URL + url, this.securityConfig())).data;
     }
     static async POST(url, body) {

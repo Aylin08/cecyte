@@ -29,9 +29,9 @@ const AppShel = ({ children, tituloPagina }) => {
           style={{
             paddingTop: 30
           }}
-          p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 250 }} sx={(theme) => ({ backgroundColor: 'purple' })}>
+          p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 250 }} sx={(theme) => ({ backgroundColor: '#571719' })}>
 
-          <Stack sx={(theme) => ({ backgroundColor: '#A4E5A4' })}>
+          <Stack sx={(theme) => ({ backgroundColor: '#571719' })}>
 
             <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<BiPlus />}><Link href='Captura'>Capturar</Link></Button>
             <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<FaEdit />}><Link href='editar'>Editar</Link></Button>
@@ -42,7 +42,7 @@ const AppShel = ({ children, tituloPagina }) => {
       footer={
         <Footers />
       }
-      header={<Header height={80} p="md" sx={(theme) => ({ backgroundColor: '#A4E5A4' })} >
+      header={<Header height={80} p="md" sx={(theme) => ({ backgroundColor: '#571719' })} >
         <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
           <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
             <Burger
