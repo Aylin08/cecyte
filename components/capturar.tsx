@@ -5,11 +5,57 @@ import AppShel from './appshel'
 import Layout from './Layout'
 import { useState } from 'react';
 import { Indicator } from '@mantine/core';
+import api from '../services/api';
 
-const Capturar = () => {
+const Capturar = (props: any) => {
+    const [nombre, setNombre] = useState('');
+    const [editor, setEditor] = useState('');
+    const [editorial, setEditorial] = useState('');
+    const [fecha, setFecha] = useState(new Date());
+    const [paginas, setPaginas] = useState('');
 
-  
-  
+
+    async function createPost() {
+
+        if (!validacion()) {
+            return;
+        }
+        const body = {
+            data: {
+                Nombre: nombre,
+                Editor: editor,
+                Editorial: editorial,
+                fecha: fecha,
+                paginas: paginas,
+            }
+        }
+        try {
+            await api.agregarLibros(body);
+
+            limpiarFormulario();
+            props.recargar();
+            //Notification.success("Usuarios","Usuario agregado correctamente");
+        } catch (error) {
+            //Notification.error("Usuarios","Usuario no creado");
+            console.error(error);
+        }
+    }
+
+    function limpiarFormulario() {
+        setNombre('');
+        setEditor('');
+        setEditorial('');
+        setPaginas('');
+        setFecha(new Date());
+
+    }
+
+    function validacion() {
+        return nombre != '' && editor != '' && editorial != '' && paginas != '';
+    }
+
+
+
     return (
         <Layout tituloPestaña={'Capturar'}>
             <AppShel tituloPagina={'Captura'}>
@@ -17,74 +63,79 @@ const Capturar = () => {
                     <TextInput
                         label="Título"
                         withAsterisk
+                        value={nombre} onChange={(event) => setNombre(event.currentTarget.value)}
                     />
                     <TextInput
                         label="Autor"
                         withAsterisk
                     />
-                    
+
                     <TextInput
                         label="Editorial"
+                        value={editorial} onChange={(event) => setEditorial(event.currentTarget.value)}
                         withAsterisk
                     />
                     <TextInput
                         label="Editor"
+                        value={editor} onChange={(event) => setEditor(event.currentTarget.value)}
                         withAsterisk
                     />
                     <TextInput
                         label="Edición"
                         withAsterisk
                     />
-                     <DatePicker
-                          
-                          placeholder="Enero 1, 2023"
-                          label="Fecha de Copyright"
-                          withAsterisk
-                          
-                          renderDay={(date) => {
+                    <DatePicker
+
+                        placeholder="Enero 1, 2023"
+                        label="Fecha de Copyright"
+                        withAsterisk
+                        value={fecha}
+                        // onChange={setFecha}
+                        renderDay={(date) => {
                             const day = date.getDate();
                             return (
-                              <Indicator size={6} color="red" offset={8} disabled={day !== 1}>
-                                <div>{day}</div>
-                              </Indicator>
-                                  );
-                                              }}
-                        />
+                                <Indicator size={6} color="red" offset={8} disabled={day !== 1}>
+                                    <div>{day}</div>
+                                </Indicator>
+                            );
+                        }}
+                    />
                     <TextInput
                         label="Lugar de Publicación"
                         withAsterisk
                     />
-                     <TextInput
+                    <TextInput
                         label="Categoría"
                         withAsterisk
                     />
-                     <TextInput
+                    <TextInput
                         label="Idioma"
                         withAsterisk
                     />
-                    
-                     <TextInput
+
+                    <TextInput
                         label="Páginas"
+                        value={paginas} onChange={(event) => setPaginas(event.currentTarget.value)}
                         withAsterisk
                     />
                     <TextInput
                         label="Estado"
                         withAsterisk
                     />
-                     <TextInput
+                    <TextInput
                         label="Ubicación"
                         withAsterisk
                     />
-                     <TextInput
+                    <TextInput
                         label="Notas"
                         withAsterisk
                     />
 
                 </Group>
 
-                <Button uppercase top={50} >
-                      Guardar
-                    </Button>
+                <Button uppercase top={50} onClick={createPost}>
+                    Guardar
+                </Button>
             </AppShel>
         </Layout>
     )
