@@ -6,6 +6,7 @@ import Layout from './Layout'
 import { useState } from 'react';
 import { Indicator } from '@mantine/core';
 import api from '../services/api';
+import styles from '../styles/Home.module.css';
 
 const Capturar = (props: any) => {
     const [nombre, setNombre] = useState('');
@@ -59,7 +60,7 @@ const Capturar = (props: any) => {
     return (
         <Layout tituloPestaña={'Capturar'}>
             <AppShel tituloPagina={'Captura'}>
-                <Group>
+                <Group className={styles.wrapper}>
                     <TextInput
                         label="Título"
                         withAsterisk
@@ -131,11 +132,13 @@ const Capturar = (props: any) => {
                         withAsterisk
                     />
 
+                    <Button uppercase top={16} onClick={createPost}>
+                                        Guardar
+                                    </Button>
+
                 </Group>
 
-                <Button uppercase top={50} onClick={createPost}>
-                    Guardar
-                </Button>
+                
             </AppShel>
         </Layout>
     )

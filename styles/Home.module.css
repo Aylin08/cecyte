@@ -127,3 +127,20 @@
     filter: invert(1);
   }
 }
+
+.h1 {
+  text-align: center;
+  font-weight:700;
+  color:#a1c298;
+ 
+}
+
+
+.wrapper {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 43px;
+  grid-row-gap: 25px;
+}

@@ -2,12 +2,14 @@ import React, {ReactNode} from 'react'
 import Link from 'next/link';
 import { AiOutlineHome, AiOutlineMore } from 'react-icons/ai'
 import { useState } from 'react';
-import { AppShell, useMantineTheme, Navbar, Stack, Button, Footer, Header, Text, MediaQuery, Burger } from '@mantine/core';
-
+import { AppShell, useMantineTheme, Navbar, Stack, Button, Footer,
+   Header, Text, MediaQuery, Burger } from '@mantine/core';
 import Images from './Image';
 import { FaBackspace, FaBackward, FaEdit } from 'react-icons/fa';
 import { BiArrowBack, BiPlus } from 'react-icons/bi';
 import Footers from './Footer';
+
+import styles from '../styles/Home.module.css';
 
 
 interface Props {
@@ -66,7 +68,8 @@ const AppShel = ({ children, tituloPagina }:Props) => {
       </Header>
       }
     >
-      <Text align="center" color='#A1C298' size="xl" transform="uppercase">{tituloPagina}</Text>
+      {/* <Text align="center" color='#A1C298' size="xl" transform="uppercase" >{tituloPagina}</Text> */}
+      <h1  className={styles.h1} >{tituloPagina}</h1>
       {children}
     </AppShell>
   )

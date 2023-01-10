@@ -1,10 +1,13 @@
-import { ActionIcon, Divider, Group, ScrollArea, Space, Table, TextInput } from '@mantine/core';
+import { ActionIcon, Divider, Group, ScrollArea, Space, Table, TextInput, Button } from '@mantine/core';
 import React, { useState, useEffect } from 'react';
 import { BiEdit, BiSearch } from 'react-icons/bi';
 import { GoTrashcan } from 'react-icons/go';
 import AppShel from '../components/appshel'
 import Layout from '../components/Layout'
 import api from '../services/api';
+import {IconEditCircle } from '@tabler/icons';
+
+
 
 const Modificar = (props: any) => {
     const [buscar, setBuscar] = useState<any>('');
@@ -91,6 +94,9 @@ const Modificar = (props: any) => {
                             mb="sm"
                             icon={<BiSearch></BiSearch>}
                         />
+
+                        <Button leftIcon={<IconEditCircle/>} variant="white">
+                            Editar información de un libro </Button>
 
 
                     </Group>
