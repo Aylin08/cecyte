@@ -12,7 +12,7 @@ const api = {
     },
 
     eliminarLibros: async (id) => {
-        return await client.DELETE('/api/books' + id);
+        return await client.DELETE('/api/books/' + id);
     },
 
 }
