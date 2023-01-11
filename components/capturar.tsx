@@ -7,6 +7,11 @@ import { useState } from 'react';
 import { Indicator } from '@mantine/core';
 import api from '../services/api';
 import styles from '../styles/Home.module.css';
+import es from '@mantine/dates';
+// First import locale data
+import 'dayjs/locale/es';
+
+
 
 const Capturar = (props: any) => {
     const [nombre, setNombre] = useState('');
@@ -86,6 +91,7 @@ const Capturar = (props: any) => {
                         withAsterisk
                     />
                     <DatePicker
+                    locale='es'
 
                         placeholder="Enero 1, 2023"
                         label="Fecha de Copyright"
