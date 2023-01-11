@@ -69,7 +69,7 @@ const AppShel = ({ children, tituloPagina }:Props) => {
       }
     >
       {/* <Text align="center" color='#A1C298' size="xl" transform="uppercase" >{tituloPagina}</Text> */}
-      <h1  className={styles.h1} >{tituloPagina}</h1>
+      <h2  className={styles.h1} >{tituloPagina}</h2>
       {children}
     </AppShell>
   )
