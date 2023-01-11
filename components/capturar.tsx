@@ -10,7 +10,7 @@ import styles from '../styles/Home.module.css';
 import es from '@mantine/dates';
 // First import locale data
 import 'dayjs/locale/es';
-
+import {IconReport } from '@tabler/icons';
 
 
 const Capturar = (props: any) => {
@@ -138,9 +138,8 @@ const Capturar = (props: any) => {
                         withAsterisk
                     />
 
-                    <Button uppercase top={16} onClick={createPost}>
-                                        Guardar
-                                    </Button>
+                    <Button uppercase top={16} leftIcon={<IconReport/>} variant="white">
+                            Guardar</Button>
 
                 </Group>
 
