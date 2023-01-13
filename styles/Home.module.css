@@ -145,7 +145,6 @@ padding-top: 4%;
  
 }
 
-
 .wrapper {
   
   display: grid;
@@ -154,3 +153,4 @@ padding-top: 4%;
   grid-column-gap: 43px;
   grid-row-gap: 25px;
 }
+

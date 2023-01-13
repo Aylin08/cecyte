@@ -3,6 +3,7 @@ import React from 'react'
 import Footers from './Footer'
 import Opciones from './opciones'
 import styles from '../styles/Home.module.css';
+
 const MenuOP
     = () => {
         return (
