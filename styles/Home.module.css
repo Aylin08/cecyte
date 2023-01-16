@@ -148,9 +148,11 @@ padding-top: 4%;
 .wrapper {
   
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 43px;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  grid-column-gap: 100px;
   grid-row-gap: 25px;
+  margin-bottom: 4%;
+  margin-top: 4%;
 }
 
