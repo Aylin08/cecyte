@@ -5,7 +5,7 @@ import { GoTrashcan } from 'react-icons/go';
 import AppShel from '../components/appshel'
 import Layout from '../components/Layout'
 import api from '../services/api';
-import {IconEditCircle } from '@tabler/icons';
+import { IconEditCircle } from '@tabler/icons';
 
 
 
@@ -95,8 +95,6 @@ const Modificar = (props: any) => {
                             icon={<BiSearch></BiSearch>}
                         />
 
-                        <Button leftIcon={<IconEditCircle/>} variant="white">
-                            Editar información de un libro </Button>
 
 
                     </Group>
