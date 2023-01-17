@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { AiOutlineHome, AiOutlineMore } from 'react-icons/ai'
 import { useState } from 'react';
 import { AppShell, useMantineTheme, Navbar, Stack, Button, Footer,
-   Header, Text, MediaQuery, Burger } from '@mantine/core';
+   Header, Text, MediaQuery, Burger, BackgroundImage } from '@mantine/core';
 import Images from './Image';
 import { FaBackspace, FaBackward, FaEdit } from 'react-icons/fa';
 import { BiArrowBack, BiPlus } from 'react-icons/bi';
@@ -24,34 +24,53 @@ const AppShel = ({ children, tituloPagina }:Props) => {
   const theme = useMantineTheme();
   const [opened, setOpened] = useState(false);
   return (
-    <AppShell
-      styles={{
-        main: {
-          background: 'pink',
+    <Stack>
 
-        },
-      }}
+    <BackgroundImage
+          src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/fondoc.jpg"
+          style={{
+            position: 'absolute',
+
+          }}
+        >
+    <AppShell
+      
       navbarOffsetBreakpoint="sm"
       asideOffsetBreakpoint="sm"
       navbar={
+      
+   
         <Navbar
           style={{
             paddingTop: 30
           }}
-          p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 250 }} sx={(theme) => ({ backgroundColor: '#571719' })}>
+          p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 250 }} 
+         >
 
-          <Stack sx={(theme) => ({ backgroundColor: '#571719' })}>
-
-            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<BiPlus />}><Link href='Captura'>Capturar</Link></Button>
-            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<FaEdit />}><Link href='editar'>Editar</Link></Button>
-            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<BiArrowBack />}><Link href='inicio'>Regresar</Link></Button>
+          
+          <Stack sx={(theme) => ({ backgroundColor: '' })}>
+            
+            
+   
+            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover':
+             { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<BiPlus />}><Link href='Captura'>Capturar</Link></Button>
+            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': 
+            { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<FaEdit />}><Link href='editar'>Editar</Link></Button>
+            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': 
+            { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<BiArrowBack />}><Link href='inicio'>Regresar</Link></Button>
+          
+         
+            
           </Stack>
         </Navbar>
+     
+
+  
       }
       footer={
         <Footers />
       }
-      header={<Header height={80} p="md" sx={(theme) => ({ backgroundColor: '#571719' })} >
+      header={<Header height={80} p="md" sx={(theme) => ({ backgroundColor: '#DDCBA4' })} >
         <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
           <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
             <Burger
@@ -72,6 +91,10 @@ const AppShel = ({ children, tituloPagina }:Props) => {
       <h2  className={styles.h1} >{tituloPagina}</h2>
       {children}
     </AppShell>
+
+    </BackgroundImage>
+
+    </Stack>
   )
 }
 

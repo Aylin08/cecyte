@@ -65,18 +65,7 @@ const Capturar = (props: any) => {
     return (
         <Layout tituloPestaña={'Capturar'}>
             <AppShel tituloPagina={'Captura'}>
-                
-      <Flex
-        mih={'20%'}
-        bg="rgba(0, 0, 0, .3)"
-        gap="xl"
-        justify="center"
-        align="center"
-        direction="column"
-        style={{
-          borderRadius: '25%',
-        }}>
-
+   
                 <Group className={styles.wrapper}>
                     <TextInput
                         label="Título"
@@ -154,8 +143,6 @@ const Capturar = (props: any) => {
                             Guardar</Button>
 
                 </Group>
-
-                </Flex>
 
                 
             </AppShel>

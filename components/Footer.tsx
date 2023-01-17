@@ -3,7 +3,7 @@ import { Footer, Text, ActionIcon, Group } from '@mantine/core';
 import { BiRegistered } from 'react-icons/bi';
 const Footers = () => {
   return (
-    <Footer height={40} p="sm" sx={(theme) => ({ backgroundColor: '#571719' })}>
+    <Footer height={40} p="sm" sx={(theme) => ({ backgroundColor: '#DDCBA4' })}>
       <Group spacing="xs">
 
         <ActionIcon>
