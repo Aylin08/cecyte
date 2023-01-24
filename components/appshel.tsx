@@ -27,7 +27,7 @@ const AppShel = ({ children, tituloPagina }:Props) => {
     <Stack>
 
     <BackgroundImage
-          src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/fondoc.jpg"
+          src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/FONDOTRES.png"
           style={{
             position: 'absolute',
 
@@ -42,21 +42,24 @@ const AppShel = ({ children, tituloPagina }:Props) => {
    
         <Navbar
           style={{
-            paddingTop: 30
+            paddingTop: 30,
+
+            backgroundColor: '#DDCBA4'
+            
           }}
           p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 250 }} 
          >
 
           
-          <Stack sx={(theme) => ({ backgroundColor: '' })}>
+          <Stack sx={(theme) => ({ backgroundColor: '#DDCBA4' })}>
             
             
    
-            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover':
+            <Button sx={(theme) => ({ backgroundColor: '#9B2242', '&:hover':
              { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<BiPlus />}><Link href='Captura'>Capturar</Link></Button>
-            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': 
+            <Button sx={(theme) => ({ backgroundColor: '#9B2242', '&:hover': 
             { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<FaEdit />}><Link href='editar'>Editar</Link></Button>
-            <Button sx={(theme) => ({ backgroundColor: '#758E75', '&:hover': 
+            <Button sx={(theme) => ({ backgroundColor: '#9B2242', '&:hover': 
             { backgroundColor: theme.fn.darken('#A1C298', 0.05), }, })} size="md" compact leftIcon={<BiArrowBack />}><Link href='inicio'>Regresar</Link></Button>
           
          
@@ -70,7 +73,7 @@ const AppShel = ({ children, tituloPagina }:Props) => {
       footer={
         <Footers />
       }
-      header={<Header height={80} p="md" sx={(theme) => ({ backgroundColor: '#DDCBA4' })} >
+      header={<Header height={80} p="md" sx={(theme) => ({ backgroundColor: '#651C32' })} >
         <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
           <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
             <Burger
