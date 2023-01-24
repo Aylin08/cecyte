@@ -130,8 +130,10 @@
 
 .h1 {
   text-align: center;
-  font-weight:700;
-  color:#a1c298;
+  font-weight:black;
+  font-size: 30px;
+  color: #111;
+  
  
 }
 
