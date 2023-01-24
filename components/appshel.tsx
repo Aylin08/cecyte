@@ -27,7 +27,7 @@ const AppShel = ({ children, tituloPagina }:Props) => {
     <Stack>
 
     <BackgroundImage
-          src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/FONDOTRES.png"
+          src="https://raw.githubusercontent.com/Aylin08/cecyte/main/public/img/fondologo.png"
           style={{
             position: 'absolute',
 
