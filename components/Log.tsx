@@ -6,7 +6,7 @@ import { FaUser } from 'react-icons/fa'
 import ImagenInicio from './LogoInicio';
 import { IconPassword } from '@tabler/icons';
 import { BiLogInCircle } from 'react-icons/bi';
-
+import styles from '../styles/Home.module.css';
 
 const Validation = z.object({
 
@@ -54,57 +54,67 @@ const Log = () => {
         style={{
           borderRadius: '15%',
         }}>
+          <div className={styles.parent}>
 
-        <Center>
+          <div className={styles.div1}>
+        
+          <Center>
           <ImagenInicio />
-        </Center>
-        <Text weight={700} align="center" fz="lg" style={{ fontFamily: 'Greycliff CF, sans-serif', color: 'white' }}>  Bienvenido (a)</Text>
-       
-         
+          </Center>
+        
+ 
 
-    <form onSubmit={form.onSubmit((values)=> console.log)}>
+
+             <Text weight={700} align="center" fz="lg" style={{ fontFamily: 'Greycliff CF, sans-serif', color: 'white' }}>  Bienvenido (a)</Text>
+
+        <form onSubmit={form.onSubmit((values)=> console.log)}>
    
-        <TextInput
-          style={{
-            paddingLeft: '10%',
-            paddingRight: '10%',
-            width: '90%',
+   <TextInput
+     style={{
+  
+       width: '90%',
 
 
-          }
+     }
 
-        }
-          mt="sm"
-          label="Usuario"
-          placeholder="No. Empleado"
-          icon={<FaUser color='#571719'></FaUser>}
-          color='white'
+   }
+     mt="sm"
+     label="Usuario"
+     placeholder="No. Empleado"
+     icon={<FaUser color='#571719'></FaUser>}
+     color='white'
 
-          {...form.getInputProps('empleadoNum')}
+     {...form.getInputProps('empleadoNum')}
 
-        />
-        <PasswordInput
-          style={{
-            paddingLeft: '10%',
-            paddingRight: '10%',
-            width: '90%',
+   />
+   <PasswordInput
+     style={{
 
-          }}
-          placeholder="Contraseña"
-          label="Contraseña"
-          icon={<IconPassword color='#571719'></IconPassword>}
+       width: '90%',
 
-          {...form.getInputProps('passwordEmpleado')}
-        />
-        <Group position="center" mt="md" mb="xs">
-          <br></br>
+     }}
+     placeholder="Contraseña"
+     label="Contraseña"
+     icon={<IconPassword color='#571719'></IconPassword>}
 
-          <Button leftIcon={<BiLogInCircle />} sx={(theme) => ({ backgroundColor: '#571719', '&:hover': { backgroundColor: theme.fn.darken('#743C3E', 0.05), }, })} type="submit" >
-           
-          <Link href="/inicio">Iniciar Sesión</Link>
-          </Button>
-        </Group>
-        </form>
+     {...form.getInputProps('passwordEmpleado')}
+   />
+   <Group position="center" mt="md" mb="xs">
+     <br></br>
+
+     <Button leftIcon={<BiLogInCircle />} sx={(theme) => ({ backgroundColor: '#571719', '&:hover': { backgroundColor: theme.fn.darken('#743C3E', 0.05), }, })} type="submit" >
+      
+     <Link href="/inicio">Iniciar Sesión</Link>
+     </Button>
+   </Group>
+   </form>
+   
+
+
+        </div>
+        
+        </div>
+    
         <br></br>
       </Flex>
     
