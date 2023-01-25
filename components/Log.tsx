@@ -77,7 +77,8 @@ const Log = () => {
 
      }
 
-   }
+   }    
+   
      mt="sm"
      label="Usuario"
      placeholder="No. Empleado"
